@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Play:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fancy animated underline */
+.hover-underline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #2563eb; /* Tailwind blue-600 */
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
