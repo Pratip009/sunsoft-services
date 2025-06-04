@@ -22,9 +22,15 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left border-b border-white/10 pb-10">
         {/* Brand Info */}
         <div>
-          <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text tracking-widest">
-            SUNSOFT
-          </h3>
+          <div className="bg-white flex items-center justify-center p-2 rounded-md mb-4">
+            <Link to="/">
+            <img
+              src="/sss.png" // assuming your logo file is named logo.png
+              alt="Sunsoft Logo"
+              className="h-20 w-auto" // adjust size as needed
+            />
+          </Link>
+          </div>
           <p className="text-white/70 text-sm mt-2">
             Empowering businesses through custom tech solutions, outsourcing,
             and innovation.

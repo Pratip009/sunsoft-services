@@ -59,11 +59,12 @@ export default function Navbar() {
       <nav className="fixed top-8 w-full z-50 bg-white/70 backdrop-blur-lg border-b border-slate-200 shadow-sm transition-all">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link
-            to="/"
-            className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text tracking-widest"
-          >
-            SUNSOFT
+          <Link to="/">
+            <img
+              src="/sss.png" // assuming your logo file is named logo.png
+              alt="Sunsoft Logo"
+              className="h-20 w-auto" // adjust size as needed
+            />
           </Link>
 
           {/* Desktop Nav */}
